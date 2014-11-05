@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Image-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController title="Image" id="ObA-dk-sSI" customClass="ActionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJS-sq-gdu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQV-7F-KLA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="8ge-lD-cvr"/>
+                                </constraints>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jQV-7F-KLA" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="2ll-r2-48F"/>
+                            <constraint firstAttribute="centerX" secondItem="ZJS-sq-gdu" secondAttribute="centerX" id="4OV-xt-gAa"/>
+                            <constraint firstAttribute="centerY" secondItem="ZJS-sq-gdu" secondAttribute="centerY" id="Ibh-lm-PDR"/>
+                            <constraint firstAttribute="trailing" secondItem="jQV-7F-KLA" secondAttribute="trailing" id="gV9-UO-GVw"/>
+                            <constraint firstAttribute="width" secondItem="ZJS-sq-gdu" secondAttribute="width" id="qkG-UY-afA"/>
+                            <constraint firstItem="jQV-7F-KLA" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="viN-Pb-6da"/>
+                            <constraint firstAttribute="height" secondItem="ZJS-sq-gdu" secondAttribute="height" id="vrA-Vk-rAS"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="toolBar" destination="jQV-7F-KLA" id="A75-eP-MT9"/>
+                        <outlet property="toolBarHeight" destination="8ge-lD-cvr" id="xHS-eA-9zb"/>
+                        <outlet property="view" destination="zMn-AG-sqS" id="Qma-de-2ek"/>
+                        <outlet property="webView" destination="ZJS-sq-gdu" id="V5V-4w-pYr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="-124"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
